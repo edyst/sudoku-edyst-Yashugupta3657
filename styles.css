@@ -10,6 +10,9 @@ h2{
 .cell{
     border:1px solid lightgray;
 }
+.prefilled{
+    background-color: #C3D7EA !important;
+}
 .cell:nth-child(3n)
 {
     border-right:1px solid black;
@@ -41,7 +44,7 @@ h2{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 34px;
     caret-color: transparent;
-    font-weight: bold;
+    font-weight: lighter;
     cursor: default;
 }
 .animate{

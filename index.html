@@ -370,10 +370,12 @@ function newGame()
               if(board[i][j]===0)
               {
                   document.querySelector(`#cell-${cellid} input`).value=""
+                  document.querySelector(`#cell-${cellid} input`).classList.remove("prefilled");
                   document.querySelector(`#cell-${cellid} input`).readOnly=false;
               }
               else{
                 document.querySelector(`#cell-${cellid} input`).value=board[i][j]
+                document.querySelector(`#cell-${cellid} input`).classList.add("prefilled");
                 document.querySelector(`#cell-${cellid} input`).readOnly=true;
               }
           }
