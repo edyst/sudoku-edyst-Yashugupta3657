@@ -268,11 +268,35 @@
     
     <script>
      var board=[];
+    var input1=document.getElementsByTagName("input")
+    for(var i=0;i<=80;i++)
+    {
+        input1[i].addEventListener('input', updateValue);
+    }
+     function updateValue(e)
+    {
+         for(var i=1;i<=81;i++)
+    {
+        if(e.target.value===document.getElementById(i).value&&e.target.value!="")
+        {
+            document.getElementById(i).classList.add("focuss")
+        }
+        else{
+            document.getElementById(i).classList.remove("focuss")
+        }
+    }
+
+    }
 
 function myfunction(position,blockcheck){
+    for(var i=1;i<=81;i++)
+    { 
+        document.getElementById(i).classList.remove("focuss")
+    }
     for(let i=1;i<=81;i++)
     {
         document.getElementById(`${i}`).classList.remove("animate")
+       
     }
       var count=0;
       var got1;

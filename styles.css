@@ -29,7 +29,7 @@ h2{
     background-color: #BBDEFB;
 }
 .focuss{
-    background-color: #BBDEFB;
+    background-color: #BBDEFB !important;
 }
 .board{
     display: grid;
