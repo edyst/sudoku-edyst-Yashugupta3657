@@ -8,31 +8,34 @@ h2{
     text-align: center;
 }
 .cell{
-    border:1px solid lightgray;
+    border:1px solid #bec6d4;
 }
 .prefilled{
-    background-color: #C3D7EA ;
+    background-color: #EBEBE4 ;
 }
 .cell:nth-child(3n)
 {
-    border-right:1px solid black;
+    border-right:1.5px solid #344861;
 } 
 .cell:nth-child(n+19):nth-child(-n+27)
 {
-    border-bottom:1px solid black;
+    border-bottom:1.5px solid #344861;
 } 
 .cell:nth-child(n+46):nth-child(-n+54)
 {
-    border-bottom:1px solid black;
+    border-bottom:1.5px solid #344861;
 } 
 .cell input:focus{
+    background-color: #BBDEFB;
+}
+.focuss{
     background-color: #BBDEFB;
 }
 .board{
     display: grid;
     grid-template-columns: repeat(9,50px);
     grid-template-rows: repeat(9,50px);
-    border:2px solid black;
+    border:2px solid #344861;
 }
 .cell input{
     height: 100%;
@@ -95,7 +98,7 @@ input::-webkit-inner-spin-button {
         display: grid;
         grid-template-columns: repeat(9,45px);
         grid-template-rows: repeat(9,45px);
-        border:1px solid black;
+        border:1px solid #344861;
     }
   }
   @media only screen and (max-width: 425px) {
@@ -104,6 +107,6 @@ input::-webkit-inner-spin-button {
         display: grid;
         grid-template-columns: repeat(9,35px);
         grid-template-rows: repeat(9,35px);
-        border:1px solid black;
+        border:1px solid #344861;
     }
   }
